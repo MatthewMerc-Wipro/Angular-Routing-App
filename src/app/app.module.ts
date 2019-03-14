@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+
 import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -19,6 +20,7 @@ const appRoutes: Routes = [
   { path: 'users/:id/:name', component: UserComponent},
   { path: 'servers', component: ServersComponent},
   { path: 'servers/:id/edit', component: EditServerComponent}
+
 ];
 @NgModule({
   declarations: [
