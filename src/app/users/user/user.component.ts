@@ -20,6 +20,7 @@ export class UserComponent implements OnInit, OnDestroy {
     };
     this.paramsSubscription = this.route.params.subscribe(
       (params: Params) => {
+        //Intuitively, it seems clunky to me to pull data from the url to get the user
         this.user.id = params['id'];
         this.user.name = params['name'];
       }
